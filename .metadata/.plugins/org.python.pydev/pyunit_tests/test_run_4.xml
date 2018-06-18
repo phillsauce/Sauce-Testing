@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 111" tests="1" total_time="Finished in: 15.82 secs."/>
+<test location="/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py" status="error" test="testing.test_sauce_python" time="">
+<stdout><![CDATA[setup time
+The test begins now
+The connection driver before test is: <selenium.webdriver.remote.webdriver.WebDriver (session="72fc2cceb83345ce982cc2fc6b7ddbb4")>
+the driver at run_sauce_test begin is: <selenium.webdriver.remote.webdriver.WebDriver (session="72fc2cceb83345ce982cc2fc6b7ddbb4")>
+teardown time
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py", line 30, in test_sauce_python
+    resultant = run_sauce_test(driver);
+  File "/Users/phillipramirez/eclipse-workspace/Python Test/TestOne/PythonUnitTesting.py", line 110, in run_sauce_test
+    return driver.title
+  File "/Users/phillipramirez/Library/Python/2.7/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 335, in title
+    resp = self.execute(Command.GET_TITLE)
+  File "/Users/phillipramirez/Library/Python/2.7/lib/python/site-packages/selenium/webdriver/remote/webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "/Users/phillipramirez/Library/Python/2.7/lib/python/site-packages/selenium/webdriver/remote/errorhandler.py", line 208, in check_response
+    raise exception_class(value)
+WebDriverException: Message: The test with session id 72fc2cceb83345ce982cc2fc6b7ddbb4 has already finished, and can't receive further commands.
+You can learn more at https://saucelabs.com/jobs/72fc2cceb83345ce982cc2fc6b7ddbb4
+For help, please check https://wiki.saucelabs.com/display/DOCS/Common+Error+Messages
+
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Python Test PyTesting.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 117" tests="1" total_time="Finished in: 18.07 secs."/>
+<test location="/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py" status="error" test="testing.test_sauce_python" time="">
+<stdout><![CDATA[setup time
+teardown time
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py", line 25, in test_sauce_python
+    print('the resultant is: ' + str(resultant) + '. Character count:'+len(resultant))
+TypeError: cannot concatenate 'str' and 'int' objects
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Python Test PyTesting.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

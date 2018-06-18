@@ -1,0 +1,36 @@
+'''
+This is me creating unit tests for my Python scripts. Hopefully it all makes sense
+and it doesn't suck too badly. Let's see if it works quite well.
+'''
+import unittest
+from TestOne.PythonUnitTesting import get_var_value
+from TestOne.PythonUnitTesting import connect_to_sauce
+from TestOne.PythonUnitTesting import run_sauce_test
+import random
+
+class testing(unittest.TestCase):
+    def setUp(self):
+        print('setup time')
+#        test_count = get_var_value() # Increments the number value for the test name
+#        driver = connect_to_sauce(test_count) #Connect to Saucelabs
+
+    def tearDown(self):
+        print('teardown time')
+
+    def test_sauce_python(self):
+        test_count = get_var_value()
+        random_decider = random.randint(0,1)
+        print('random_decider is:'+str(random_decider))
+        driver = connect_to_sauce(test_count, random_decider)
+        resultant = run_sauce_test(driver);
+        #Check the result and if the new tab's title is an even amount of characters, pass
+        #Otherwise, fail the test
+        #Update pass/fail to Saucelabs via api using the results parameter
+        if len(resultant) % 2 == 0:
+            driver.execute_script('sauce: job-result=passed')
+        else:
+            driver.execute_script('sauce: job-result=failed')
+        driver.quit() #Done with test. Do I  have to quit the driver here or like... in the fuction?
+    
+    
+    

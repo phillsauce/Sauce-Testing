@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 124" tests="1" total_time="Finished in: 11.92 secs."/>
+<test location="/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py" status="ok" test="testing.test_sauce_python" time="11.92">
+<stdout><![CDATA[setup time
+driver session is: 5c37df117d4b4b999813f43c05fd8c02
+the resultant is: Weird or Confusing. Character count:18
+the job passed
+teardown time
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Python Test PyTesting.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

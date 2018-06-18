@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 113" tests="1" total_time="Finished in: 16.12 secs."/>
+<test location="/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py" status="ok" test="testing.test_sauce_python" time="16.12">
+<stdout><![CDATA[setup time
+The test begins now
+The connection driver before test is: <selenium.webdriver.remote.webdriver.WebDriver (session="c4efffc97c0f4f66b6becda912ed54dc")>
+the driver at run_sauce_test begin is: <selenium.webdriver.remote.webdriver.WebDriver (session="c4efffc97c0f4f66b6becda912ed54dc")>
+the resultant is: The finger, deal with it.
+the driver first is: <selenium.webdriver.remote.webdriver.WebDriver (session="c4efffc97c0f4f66b6becda912ed54dc")>
+the driver second is: <selenium.webdriver.remote.webdriver.WebDriver (session="c4efffc97c0f4f66b6becda912ed54dc")>
+teardown time
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Python Test PyTesting.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

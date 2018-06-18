@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 110" tests="1" total_time="Finished in: 10.21 secs."/>
+<test location="/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py" status="ok" test="testing.test_sauce_python" time="10.21">
+<stdout><![CDATA[setup time
+The test begins now
+The connection driver before test is: <selenium.webdriver.remote.webdriver.WebDriver (session="a325a3dd73e641b688da87064080cf1d")>
+the driver at run_sauce_test begin is: <selenium.webdriver.remote.webdriver.WebDriver (session="a325a3dd73e641b688da87064080cf1d")>
+the resultant is: Tiny Tuba
+teardown time
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Python Test PyTesting.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

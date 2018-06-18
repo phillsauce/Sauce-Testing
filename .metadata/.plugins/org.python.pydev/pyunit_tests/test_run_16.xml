@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 123" tests="1" total_time="Finished in: 14.05 secs."/>
+<test location="/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py" status="ok" test="testing.test_sauce_python" time="14.04">
+<stdout><![CDATA[setup time
+driver session is: e8d13b137f9b43a0a327247d7c8d33ca
+the resultant is: HEEEEEEEEEEEEEEY!. Character count:17
+test failed
+teardown time
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Python Test PyTesting.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

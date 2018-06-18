@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 108" tests="1" total_time="Finished in: 19.14 secs."/>
+<test location="/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py" status="error" test="testing.test_sauce_python" time="">
+<stdout><![CDATA[setup time
+The test begins now
+The connection driver before test is: <selenium.webdriver.remote.webdriver.WebDriver (session="d87299d1900f4e799973de234625c108")>
+the driver at run_sauce_test begin is: <selenium.webdriver.remote.webdriver.WebDriver (session="d87299d1900f4e799973de234625c108")>
+teardown time
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "/Users/phillipramirez/eclipse-workspace/Python Test/PyTesting/test/PyTesting.py", line 30, in test_sauce_python
+    resultant = run_sauce_test(driver);
+  File "/Users/phillipramirez/eclipse-workspace/Python Test/TestOne/PythonUnitTesting.py", line 108, in run_sauce_test
+    return driver.title()
+TypeError: 'unicode' object is not callable
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="Python Test PyTesting.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

@@ -1,0 +1,5 @@
+INDEX VERSION 1.4+/Users/phillipramirez/eclipse-workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2606646544.index
+2579006265.index
+4009820066.index
+659783354.index

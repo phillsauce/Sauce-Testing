@@ -1,0 +1,29 @@
+var webdriver = require('selenium-webdriver'),
+    username = "phillipramirez",
+    accessKey = "8d1823e8-289b-4737-b678-87e93623ca94",
+    driver;
+
+const delay = require('delay');
+
+driver = new webdriver.Builder().
+  withCapabilities({
+    'browserName': 'chrome',
+    'platform': 'Windows 10',
+    'version': 'latest',
+    'username': username,
+    'accessKey': accessKey,
+    'name': 'Node.js Tests',
+    }).
+  usingServer("http://" + username + ":" + accessKey +
+              "@ondemand.saucelabs.com:80/wd/hub").
+  build();
+ 
+driver.get("http://www.engadget.com");
+ 
+await delay(100);
+
+driver.getTitle().then(function (title) {
+    console.log("title is: " + title);
+});
+ 
+driver.quit();

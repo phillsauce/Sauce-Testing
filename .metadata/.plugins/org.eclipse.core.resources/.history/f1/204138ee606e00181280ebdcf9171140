@@ -1,0 +1,41 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.By;
+import java.net.URL;
+
+
+class JavaTest {
+
+//  public static final String USERNAME = "phillipramirez";
+//  public static final String ACCESS_KEY = "8d1823e8-289b-4737-b678-87e93623ca94";
+  public static final String USERNAME = System.getenv("SAUCE_USERNAME");
+  public static final String ACCESS_KEY = System.getenv("SAUCE_ACCESS_KEY");
+  public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:443/wd/hub";
+ 
+  public static void main(String[] args) throws Exception {
+    DesiredCapabilities caps = DesiredCapabilities.chrome();
+    caps.setCapability("platform", "Windows 10");
+    caps.setCapability("version", "latest");
+    caps.setCapability("name", "Java Test - Testing System Variables");
+
+ 
+    WebDriver driver = new RemoteWebDriver(new URL(URL), caps);
+    WebDriverWait wait = new WebDriverWait(driver, 10);
+ 
+    driver.get("http://the-internet.herokuapp.com/dynamic_loading/2");
+
+    WebElement messageElement = wait.until(
+            ExpectedConditions.presenceOfElementLocated(
+            By.id("finish")));
+//            		By.tagName('Open Menu')));
+        
+//            By.ByClassName("logo navbar-brand")));
+    System.out.println("title of page is: " + driver.getTitle());
+ 
+    driver.quit();
+  }
+}

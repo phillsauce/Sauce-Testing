@@ -1,0 +1,4 @@
+class Calculator(object):
+
+    def add(self, opernda, operandb):
+        return opernada + opernadb

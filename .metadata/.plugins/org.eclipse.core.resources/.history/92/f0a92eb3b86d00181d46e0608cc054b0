@@ -1,0 +1,17 @@
+require "selenium/webdriver"
+ 
+caps = {
+  :platform => "Windows 7",
+  :browserName => "Chrome",
+  :version => "45"
+}
+ 
+driver = Selenium::WebDriver.for(:remote,
+    :url => "https://phillipramirez:8d1823e8-289b-4737-b678-87e93623ca94@ondemand.saucelabs.com:443/wd/hub",
+    :desired_capabilities => caps)
+ 
+driver.get('http://saucelabs.com/test/guinea-pig')
+ 
+puts "title of webpage is: #{driver.title()}"
+ 
+driver.quit()
